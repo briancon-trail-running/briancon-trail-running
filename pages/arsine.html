@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trail Running Alps - Lac D'Arsine</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <!-- Logo -->
+  <header>
+    <div class="logo">Briançon Trail Running</div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="images/arsine.jpg" alt="Lac d'Arsine" class="header-image">
+  </main>
+
+  <main>
+    <div class="content-wrapper">
+      <h1>Lac d'Arsine</h1>
+
+      <div class="route-header">
+        <p><strong>Distance:</strong> 27.9KM | <strong>Elevation Gain:</strong> 1000M+</p>
+      </div>
+
+      <div class="date-range">
+        <p><strong>Dates accessible: </strong>June to September</p>
+      </div>
+
+      <div class="coordinates">
+        <p><strong>Start co-ordinates:</strong> <a href="https://maps.app.goo.gl/2PU4mudF8bkiMohu5">45.071614,
+            6.878595</a></p>
+      </div>
+
+
+      <div class="gpx-link">
+        <button onclick="downloadGPX()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+          Download GPX
+        </button>
+
+        <script>
+          function downloadGPX() {
+            const link = document.createElement('a');
+            link.href = 'traces/arsine.zip';
+            link.download = 'arsine.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }
+        </script>
+      </div>
+
+      <div class="route-description">
+        <h3> Route description</h3>
+        <p> A steady climb through the woods takes you up below the glacier and the Lac d'Arsine. All of the ascent
+          happens in the first 12km and from then on the route is a nice long downhill.
+        </p>
+        <p>
+          Before exiting out towards the road you will pass by a technical section with a cable that makes this route
+          dangerous when snowy. Luckily this section is south facing so it's usually clear of snow early.
+        </p>
+      </div>
+
+      <div class="route-description">
+        <h3>Access</h3>
+        <p>
+          There is a small car park just outside of the village of Le Lauzet.
+        </p>
+      </div>
+
+      <div class="komoot">
+        <iframe
+          src="https://www.komoot.com/fr-fr/tour/2368811887/embed?share_token=aSQuY1YdHWwa7YyOFtH2mJFoblWfdSrFjVtzgdACT815u8WK56&profile=1"
+          width="100%" height="700" frameborder="0" scrolling="no"></iframe>
+      </div>
+  </main>
+
+
+</body>
+
+</html>

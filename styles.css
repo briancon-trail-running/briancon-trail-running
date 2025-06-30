@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px 10px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #0077cc;
+}
+
+.grid-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* Make wrapper take full width */
+  padding: 2rem;
+  /* Add some padding around the grid */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  /* Make container take full width */
+  max-width: 1800px;
+  /* Limit maximum width */
+}
+
+.card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  height: auto;
+  aspect-ratio: 4 / 3;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.card:hover::before {
+  background-color: rgba(0, 0, 0, 0.4);
+  /* darker on hover */
+}
+
+.overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.overlay p {
+  font-size: 14px;
+}
+
+/* Add these new styles for individual pages */
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  /* Same as grid-container */
+  margin: 0 auto;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.gpx-link {
+  text-decoration: none;
+  /* Green */
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.route-header {
+  display: flex;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.route-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.komoot {
+  margin-top: 20px;
+}

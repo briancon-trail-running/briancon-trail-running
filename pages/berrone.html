@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trail Running Alps - Bivacco Berrone Loop</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <!-- Logo -->
+  <header>
+    <div class="logo">Briançon Trail Running</div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="images/berrone.jpg" alt="Bivacco Berrone Loop" class="header-image">
+  </main>
+
+  <main>
+    <div class="content-wrapper">
+      <h1>Bivacco Berrone</h1>
+
+      <div class="route-header">
+        <p><strong>Distance:</strong> 29.2KM | <strong>Elevation Gain:</strong> 2410M+</p>
+      </div>
+
+      <div class="date-range">
+        <p><strong>Dates accessible: </strong>June to September</p>
+      </div>
+
+      <div class="coordinates">
+        <p><strong>Start co-ordinates:</strong> <a href="https://maps.app.goo.gl/2PU4mudF8bkiMohu5">45.071614,
+            6.878595</a></p>
+      </div>
+
+
+      <div class="gpx-link">
+        <button onclick="downloadGPX()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+          Download GPX
+        </button>
+
+        <script>
+          function downloadGPX() {
+            const link = document.createElement('a');
+            link.href = 'traces/berrone.zip';
+            link.download = 'berrone.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }
+        </script>
+      </div>
+
+      <div class="route-description">
+        <h3> Route description</h3>
+        <p>A brutal climb, a few summits above 3000m, and then a brutal descent. A few technical passages with cables.
+          To make the downhill a little sweeter
+          you will be rewarded with amazing views on the Ecrins massif.
+        </p>
+        <p>
+          If you want to break the route up into two days you can stay in the Bivacco, though during summer you'll want
+          to arrive
+          early (before 2pm) to get a spot.
+        </p>
+      </div>
+
+      <div class="route-description">
+        <h3>Access</h3>
+        <p>
+          There is a small car park just outside of the village of Salbertrand.
+        </p>
+      </div>
+
+      <div class="komoot">
+        <iframe
+          src="https://www.komoot.com/fr-fr/tour/2368739722/embed?share_token=aO82StkDK3jXpsk2TTFzsomGUxmo5RIMfEWnw1qdjWc34b67RB&profile=1"
+          width="100%" height="700" frameborder="0" scrolling="no"></iframe>
+      </div>
+  </main>
+
+
+</body>
+
+</html>
