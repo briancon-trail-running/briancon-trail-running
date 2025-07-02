@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Briançon Trail Running</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo-text">Briançon Trail Running</div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="images/croixdetoulouse.jpg" alt="La Croix de Toulouse" class="header-image">
+  </main>
+
+  <main>
+    <div class="content-wrapper">
+      <h1>La Croix de Toulouse</h1>
+
+      <div class="route-header">
+        <p><strong>Distance:</strong> 6.1KM | <strong>Elevation Gain:</strong> 540M+</p>
+      </div>
+
+      <div class="date-range">
+        <p><strong>Season: </strong>All year!</p>
+      </div>
+
+      <div class="coordinates">
+        <p><strong>Start co-ordinates:</strong> <a href="https://maps.app.goo.gl/2PU4mudF8bkiMohu5">44.903789,
+            6.646550</a></p>
+      </div>
+
+
+      <div class="gpx-link">
+        <button onclick="downloadGPX()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+          Download GPX
+        </button>
+
+        <script>
+          function downloadGPX() {
+            const link = document.createElement('a');
+            link.href = 'traces/croix-de-toulouse.gpx.zip';
+            link.download = 'croix-de-toulouse.gpx.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }
+        </script>
+      </div>
+
+      <div class="route-description">
+        <h3> Route description</h3>
+        <p>This is without doubt the trail I do the most often in Briançon. The chances are, if you decide to do it, you
+          will probably come across me at some point.</p>
+        <p>Accessible all year round because of its southern exposition and relatively low altitude, La Croix de
+          Toulouse has a little bit of everything -- some runnable sections, some technical sections, and great views
+          all along. Though there are many options for getting up La Croix de Toulouse, my favourite is to go up on the
+          west side and descend the steeper east side (Bois de la Pinée).</p>
+        </p>
+        <p>
+          Watch out for mountain bikers in the summer!
+        </p>
+      </div>
+
+      <div class="route-description">
+        <h3>Access</h3>
+        <p>
+          Directly accessible from Briançon.
+        </p>
+      </div>
+
+      <div class="komoot">
+        <iframe
+          src="https://www.komoot.com/fr-fr/tour/2373529531/embed?share_token=aQiDGPmmiKPC16o5nX73rq09Pd5eqVLkx1GjK4gvSiaFlibfI6&profile=1"
+          width="100%" height="700" frameborder="0" scrolling="no"></iframe>
+      </div>
+  </main>
+
+
+</body>
+
+</html>

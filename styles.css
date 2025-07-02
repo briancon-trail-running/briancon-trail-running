@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #fff;
+  background-color: #fefdfc;
   color: #333;
 }
 
@@ -16,9 +16,13 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
-.logo {
+.logo-text {
   font-size: 24px;
   font-weight: bold;
+}
+
+.logo {
+  max-width: 250px;
 }
 
 .navbar {
@@ -52,7 +56,7 @@ header {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(300px, 3fr));
   gap: 20px;
   width: 100%;
   /* Make container take full width */
@@ -143,8 +147,6 @@ main {
 .route-header {
   display: flex;
   font-size: 18px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .route-description {
