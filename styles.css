@@ -110,7 +110,6 @@ header {
   font-size: 14px;
 }
 
-/* Add these new styles for individual pages */
 main {
   display: flex;
   justify-content: center;
@@ -161,4 +160,12 @@ main {
 
 p {
   padding-top: 20px;
+}
+
+#map {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  margin-left: auto;
+  margin-right: auto;
 }

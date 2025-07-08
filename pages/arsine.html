@@ -5,17 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Briançon Trail Running</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <link rel="icon" type="image/x-icon" href="../images/favicon.png">
   <link rel="stylesheet" href="../styles.css" />
 </head>
 
 <body>
-  <!-- Logo -->
   <header>
     <div class="logo-text">Briançon Trail Running</div>
     <nav>
       <ul class="navbar">
         <li><a href="../index.html">Home</a></li>
+        <li><a href="../map.html">Map</a></li>
         <li><a href="../about.html">About</a></li>
       </ul>
     </nav>
@@ -38,8 +38,8 @@
       </div>
 
       <div class="coordinates">
-        <p><strong>Start co-ordinates:</strong> <a href="https://maps.app.goo.gl/2PU4mudF8bkiMohu5">45.071614,
-            6.878595</a></p>
+        <p><strong>Start co-ordinates:</strong> <a href="https://maps.app.goo.gl/6ZzrkmL1wwWtUK9T8">45.014631,
+            6.466579</a></p>
       </div>
 
 
@@ -51,8 +51,8 @@
         <script>
           function downloadGPX() {
             const link = document.createElement('a');
-            link.href = 'traces/arsine.zip';
-            link.download = 'arsine.zip';
+            link.href = 'traces/arsine.gpx';
+            link.download = 'arsine.gpx';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
