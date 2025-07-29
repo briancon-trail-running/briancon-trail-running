@@ -110,6 +110,25 @@ header {
   font-size: 14px;
 }
 
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    /* Make grid 1 column on mobile screens */
+    gap: 10px;
+    /* Smaller gap on mobile */
+    padding: 1rem;
+    /* Smaller padding on mobile */
+  }
+
+  .overlay h2 {
+    font-size: 14px;
+  }
+
+  .overlay p {
+    font-size: 12px;
+  }
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -160,12 +179,4 @@ main {
 
 p {
   padding-top: 20px;
-}
-
-#map {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  margin-left: auto;
-  margin-right: auto;
 }
